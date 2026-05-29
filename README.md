@@ -27,6 +27,10 @@ A modern student collaboration platform to find teammates, share project ideas, 
 
 (Add screenshot here)
 
+## Live Demo
+
+https://pedasingudeekshitha03-source.github.io/DevConnect/
+
 ## Future Improvements
 
 - User Authentication
@@ -38,3 +42,4 @@ A modern student collaboration platform to find teammates, share project ideas, 
 ## Author
 
 Deekshitha Pedasingu
+B.Tech CSE
