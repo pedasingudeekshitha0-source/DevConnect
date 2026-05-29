@@ -16,7 +16,7 @@ A modern student collaboration platform to find teammates, share project ideas, 
 - HTML5
 - CSS3
 - JavaScript
-- 
+
 ## Screenshot
 
 ![DevConnect](Screenshot_20260529_144004.jpg)
