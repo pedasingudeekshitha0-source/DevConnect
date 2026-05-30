@@ -1,24 +1,25 @@
 function searchDevelopers() {
 
-    let input =
-    document.getElementById("searchInput")
-    .value
-    .toLowerCase();
+    let input = document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
 
-    let cards =
-    document.querySelectorAll(".card");
+    let cards = document.querySelectorAll(".card");
 
     cards.forEach(card => {
 
-        let text =
-        card.innerText.toLowerCase();
+        let tags = Array.from(card.querySelectorAll(".tags span"))
+            .map(tag => tag.innerText.toLowerCase());
 
-        if(text.includes(input)) {
-
+        if (input === "") {
             card.style.display = "block";
-
-        } else {
-
+        }
+        else if (tags.includes(input)) {
+            card.style.display = "block";
+        }
+        else {
             card.style.display = "none";
         }
 
