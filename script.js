@@ -1,16 +1,24 @@
 function searchDevelopers() {
 
-    let input = document.getElementById("searchInput").value.toLowerCase();
+    let input =
+    document.getElementById("searchInput")
+    .value
+    .toLowerCase();
 
-    let cards = document.querySelectorAll(".card");
+    let cards =
+    document.querySelectorAll(".card");
 
     cards.forEach(card => {
 
-        let text = card.innerText.toLowerCase();
+        let text =
+        card.innerText.toLowerCase();
 
-        if (text.includes(input)) {
+        if(text.includes(input)) {
+
             card.style.display = "block";
+
         } else {
+
             card.style.display = "none";
         }
 
