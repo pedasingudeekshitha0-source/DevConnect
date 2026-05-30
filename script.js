@@ -10,18 +10,21 @@ function searchDevelopers() {
 
     cards.forEach(card => {
 
-        let tags = Array.from(card.querySelectorAll(".tags span"))
-            .map(tag => tag.innerText.toLowerCase());
+        let tags = card.querySelectorAll(".tags span");
+        let found = false;
+
+        tags.forEach(tag => {
+            if (tag.innerText.toLowerCase() === input) {
+                found = true;
+            }
+        });
 
         if (input === "") {
             card.style.display = "block";
-        }
-        else if (tags.includes(input)) {
+        } else if (found) {
             card.style.display = "block";
-        }
-        else {
+        } else {
             card.style.display = "none";
         }
-
     });
 }
