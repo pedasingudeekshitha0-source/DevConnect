@@ -8,23 +8,23 @@ function searchDevelopers() {
 
     let cards = document.querySelectorAll(".card");
 
-    cards.forEach(card => {
+    cards.forEach(function(card) {
 
-        let tags = card.querySelectorAll(".tags span");
-        let found = false;
-
-        tags.forEach(tag => {
-            if (tag.innerText.toLowerCase() === input) {
-                found = true;
-            }
+        let tags = Array.from(
+            card.querySelectorAll(".tags span")
+        ).map(function(tag) {
+            return tag.innerText.toLowerCase();
         });
 
         if (input === "") {
             card.style.display = "block";
-        } else if (found) {
+        }
+        else if (tags.includes(input)) {
             card.style.display = "block";
-        } else {
+        }
+        else {
             card.style.display = "none";
         }
+
     });
 }
