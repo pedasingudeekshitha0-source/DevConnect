@@ -27,4 +27,25 @@ function searchDevelopers() {
         }
 
     });
+    const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function () {
+
+let searchValue = searchInput.value.toLowerCase();
+
+let cards = document.querySelectorAll(".developer-card");
+
+cards.forEach(card => {
+
+let name = card.querySelector("h3").textContent.toLowerCase();
+
+if(name.includes(searchValue)){
+card.style.display = "block";
+}else{
+card.style.display = "none";
+}
+
+});
+
+});
 }
