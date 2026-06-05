@@ -44,7 +44,33 @@ card.style.display = "block";
 }else{
 card.style.display = "none";
 }
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".developer-card");
+const noResults = document.getElementById("noResults");
 
+searchInput.addEventListener("keyup", function () {
+
+    let searchValue = searchInput.value.toLowerCase();
+    let visibleCards = 0;
+
+    cards.forEach(card => {
+
+        let text = card.textContent.toLowerCase();
+
+        if (text.includes(searchValue)) {
+            card.style.display = "block";
+            visibleCards++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    if (visibleCards === 0) {
+        noResults.style.display = "block";
+    } else {
+        noResults.style.display = "none";
+    }
+});
 });
 
 });
