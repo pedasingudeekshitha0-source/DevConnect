@@ -70,6 +70,23 @@ searchInput.addEventListener("keyup", function () {
     } else {
         noResults.style.display = "none";
     }
+    const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", () => {
+  const searchValue = searchInput.value.toLowerCase();
+
+  const cards = document.querySelectorAll(".developer-card");
+
+  cards.forEach(card => {
+    const name = card.querySelector("h3").textContent.toLowerCase();
+
+    if (name.includes(searchValue)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
 });
 });
 
