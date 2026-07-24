@@ -17,16 +17,16 @@ A modern student collaboration platform to find teammates, share project ideas, 
 - CSS3
 - JavaScript
 
-## Screenshot
+## Screenshot:
 
 ![DevConnect](Screenshot_20260529_144004.jpg)
 
 
-## Live Demo
+## Live Demo:
 
 https://pedasingudeekshitha0-source.github.io/DevConnect/
 
-## Future Improvements
+## Future Improvements:
 
 - User Authentication
 - Project Posting System
