@@ -24,7 +24,7 @@ A modern student collaboration platform to find teammates, share project ideas, 
 
 ## Live Demo:
 
-https://pedasingudeekshitha0-source.github.io/DevConnect/
+https://pedasingudeekshitha0-source.github.io/Devconnect/
 
 ## Future Improvements:
 
